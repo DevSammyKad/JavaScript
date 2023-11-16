@@ -3,10 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Javascript</title>
   </head>
   <body>
-    <script src="variables.js"></script>
-    <script src="02_dataTypes.js"></script>
+    <!-- <script src="variables.js"></script> -->
+    <!-- <script src="02_dataTypes.js"></script> -->
+    <script src="03_convertionOpration.js"></script>
+
+    <form id="myForm">
+      <label for="quantity">Quantity:</label>
+      <input type="text" id="quantity" name="quantity" />
+
+      <label for="price">Price per item:</label>
+      <input type="text" id="price" name="price" />
+
+      <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+
+    <div id="result"></div>
+    <script>
+      function calculateTotal() {
+        // Get values from the form
+        const quantityInput = document.getElementById("quantity");
+        const priceInput = document.getElementById("price");
+
+        // Convert values to numbers
+        const quantity = parseFloat(quantityInput.value);
+        const price = parseInt(priceInput.value);
+
+        // Check if the conversion was successful
+        if (isNaN(quantity) || isNaN(price)) {
+          alert("Please enter valid numbers for quantity and price.");
+          return;
+        }
+
+        // Calculate total
+        const total = quantity * price;
+
+        // Display the result
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = `Total: $${total.toFixed(2)}`;
+      }
+    </script>
   </body>
 </html>

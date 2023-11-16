@@ -4,8 +4,13 @@
 
 // string => "any word" or "any number" but use " " or '
 // Boolean => true or false
-// undefined => undefined
+// undefined => undefined // or value are not resign
 // null => standalone value
 
 let username = "sameer";
-console.log(username);
+console.log({ username });
+
+type = false;
+
+console.log(typeof type);
+
