@@ -8,7 +8,10 @@
   <body>
     <!-- <script src="variables.js"></script> -->
     <!-- <script src="02_dataTypes.js"></script> -->
-    <script src="03_convertionOpration.js"></script>
+    <!-- <script src="03_convertionOpration.js"></script> -->
+    <!-- <script src="/04_comparison.js"></script> -->
+    <!-- <script src="/05_datatypes-summery.js"></script> -->
+    <script src="/06_string.js"></script>
 
     <form id="myForm">
       <label for="quantity">Quantity:</label>
@@ -24,8 +27,8 @@
     <script>
       function calculateTotal() {
         // Get values from the form
-        const quantityInput = document.getElementById("quantity");
-        const priceInput = document.getElementById("price");
+        const quantityInput = document.getElementById('quantity');
+        const priceInput = document.getElementById('price');
 
         // Convert values to numbers
         const quantity = parseFloat(quantityInput.value);
@@ -33,7 +36,7 @@
 
         // Check if the conversion was successful
         if (isNaN(quantity) || isNaN(price)) {
-          alert("Please enter valid numbers for quantity and price.");
+          alert('Please enter valid numbers for quantity and price.');
           return;
         }
 
@@ -41,7 +44,7 @@
         const total = quantity * price;
 
         // Display the result
-        const resultDiv = document.getElementById("result");
+        const resultDiv = document.getElementById('result');
         resultDiv.innerHTML = `Total: $${total.toFixed(2)}`;
       }
     </script>
