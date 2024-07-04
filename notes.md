@@ -1,4 +1,4 @@
-<!-- Try to understand comparison symbol -->
+<!--* Try to understand comparison symbol -->
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
 
@@ -15,7 +15,7 @@ Logical OR (||)
 
 <!-- There are to types of dataTypes Primitive and Referance type (non primitive ) -->
 
- <!-- There are 7 primitive data types: -->
+ <!--* There are 7 primitive data types: -->
 
 string
 number
@@ -25,21 +25,21 @@ undefined
 symbol
 null
 
-<!-- There are 3 Non-primitive data types: -->
+<!--* There are 3 Non-primitive data types: -->
 
 array
 object
 Fuction
 
-<!--  Stack And Heap-->
+<!--*  Stack And Heap-->
 
-<!-- String  -->
+<!--* String  -->
 
 Two string Concat means adding "sameer" + "kad" => sameerkad
 
 String Interpolation means use backtics = > ``
 
-<!-- string Methods -->
+<!--* string Methods -->
 
 toUpperCase() - Converts string to uppercase
 toLowerCase() - Converts string to lowercase
@@ -55,3 +55,44 @@ endsWith() - Checks if a string ends with specified text
 charAt() - Returns the character at a given index
 substring() - Extracts characters from string between given indices
 length - Property that returns the length of the string
+
+<!--* //  Array methods -->
+
+// push
+// pop
+// shift
+// unshift
+// contat
+
+<!--* Objects  -->
+
+<!-- Non Single Tone object and Single Tone object -->
+
+SingleTon ==> const tinderUser = new Object();
+
+Non Single Tone object ==> const user = {}
+
+<!--* Ways to access Object key Property -->
+
+// _ . Notation
+// _ Bracket Notation
+
+<!--* Functions -->
+
+Parameter Vs Arguments
+
+function Name(Parameters){
+Logic
+}
+
+Name(Parameters) ant this called agruments
+
+<!-- Basic function -->
+
+function addOne(num) {
+return num + 1;
+}
+
+console.log(addOne(8));
+
+<!-- Expression fuction -->
