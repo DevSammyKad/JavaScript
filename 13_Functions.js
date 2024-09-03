@@ -166,7 +166,7 @@ function calculateDiscountPercentageFraction(originalPrice, discountedPrice) {
   let discount = originalPrice - discountedPrice;
   let discountFraction = discount / originalPrice;
   let discountPercentage = discountFraction * 100;
-  return discountFraction;
+  return discountPercentage;
 }
 
 console.log(
@@ -174,10 +174,55 @@ console.log(
   ' calculateDiscountPercentageFraction'
 );
 // Create a function convertTemperature that converts temperatures between Celsius and Fahrenheit. It should take a temperature value and a scale ('C' for Celsius, 'F' for Fahrenheit) as parameters and return the converted temperature.
+
+function convertTemperature(temperature, scale) {
+  if (scale === 'C') {
+    // Convert Celsius to Fahrenheit
+    const fahrenheit = (temperature * 9) / 5 + 32;
+    return fahrenheit;
+  } else if (scale === 'F') {
+    // Convert Fahrenheit to Celsius
+    const celsius = (temperature - 32) / 1.8;
+    return celsius;
+  } else {
+    return "Invalid scale. Please use 'C' for Celsius or 'F' for Fahrenheit.";
+  }
+}
+
+// Example usage:
+const celsiusValue = 40;
+const convertedFahrenheit = convertTemperature(celsiusValue, 'C');
+console.log(
+  `${celsiusValue.toFixed(
+    2
+  )} Celsius is equivalent to: ${convertedFahrenheit.toFixed(2)} Fahrenheit`
+);
+
 // Implement a function checkPalindrome that checks if a given string is a palindrome. Return true if it is, and false otherwise.
 // Write a function calculateFactorial that calculates the factorial of a given number and returns the result.
 // Create a function checkPrimeNumber that checks if a given number is a prime number. Return true if it is, and false otherwise.
-// const createHelloWorld = () => {
-//   let word = console.log('Hello World');
-//   return word;
-// };
+
+console.log('________________QUESTIONS_______________________');
+// Write a JavaScript function that reverses a number.
+
+const reverseNumber = (number) => {
+  let reverse = parseInt(number.toString().split('').reverse().join(''));
+  return reverse;
+};
+console.log(reverseNumber(1122));
+
+//  Write a function named add that takes two arguments and returns their sum.
+
+function addTwoValue(firstValue, secondValue) {
+  if (firstValue !== Number) {
+    return console.log(firstValue, ' First value is not an Number');
+  }
+  if (secondValue !== Number || typeof secondValue === String) {
+    return console.log('Second Value is not an Number');
+  } else {
+    let Answer = firstValue + secondValue;
+    return console.log(Answer);
+  }
+}
+
+console.log(addTwoNumber(222222, 2));
