@@ -109,22 +109,3 @@ function greetBaseOnTime(hour) {
 }
 
 greetBaseOnTime(250);
-
-// const isTruthy = false === 0;
-
-// if (isTruthy) {
-//   console.log('Yes this value is Truthy', typeof isTruthy, isTruthy);
-// } else {
-//   console.log('No this value is Falsy', typeof isTruthy, isTruthy);
-// }
-
-// // Truthy value : "0", true, [], {} , new Date, function(){} ,Infinity ,-Infinity
-// // Falsy value : 0, -0 , "" ,``, undefined, false
-
-// // How We can detect Object is Empty Or not ?
-
-// const emptyObject = {};
-
-// if (Object.keys(emptyObject).length === 0) {
-//   console.log('Object');
-// }
